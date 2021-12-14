@@ -22,7 +22,8 @@ class TestSomeClassA(unittest.TestCase):
 
 
 class TestSomeClassB(unittest.TestCase):
-
+    
+    @classmethod
     def setUpClass(cls):
         pass
         # Will run once before ALL tests
@@ -32,7 +33,8 @@ class TestSomeClassB(unittest.TestCase):
 
     def test_some_test_caseB(self):
         pass
-
+    
+    @classmethod
     def tearDownClass(cls):
         pass
         # Will run once after ALL tests
